@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 500px;
+  height: 100vh;
+  flex-shrink: 1;
+  background-color: #ddd;
+  display: flex;
+}
+
+.sidebar_content {
+  flex: 1;
+}
+
+.sidebar_resizer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 5px;
+  justify-self: flex-end;
+  cursor: col-resize;
+  resize: horizontal;
+  /* transition: .3s; */
+}
+
+.sidebar_resizer:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+.sidebar_resizer:active {
+  background-color: rgb(53, 53, 53);
+}
