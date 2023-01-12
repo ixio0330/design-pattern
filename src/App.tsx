@@ -6,6 +6,8 @@ import Command from './design-pattern/04-command/command.tsx';
 import Adapter from './design-pattern/05-adapter/adapter.tsx';
 import Proxy from './design-pattern/06-proxy/proxy.tsx';
 import TemplateMethod from './design-pattern/07-template-method/templateMethod.tsx';
+import Decorator from './design-pattern/08-decorator/Decorator.tsx';
+import FactoryMethod from './design-pattern/09-factory-method/FactoryMethod.tsx';
 
 type WrapperProps = {
   title: string;
@@ -44,6 +46,12 @@ function App() {
       </Wrapper>
       <Wrapper title='7. Template Method'>
         <TemplateMethod />
+      </Wrapper>
+      <Wrapper title='8. Decorator'>
+        <Decorator />
+      </Wrapper>
+      <Wrapper title='9. Factory Method'>
+        <FactoryMethod />
       </Wrapper>
     </div>
   );
