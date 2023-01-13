@@ -8,6 +8,8 @@ import Proxy from './design-pattern/06-proxy/proxy.tsx';
 import TemplateMethod from './design-pattern/07-template-method/templateMethod.tsx';
 import Decorator from './design-pattern/08-decorator/Decorator.tsx';
 import FactoryMethod from './design-pattern/09-factory-method/FactoryMethod.tsx';
+import Mediator from './design-pattern/10-mediator/Mediaotr.tsx';
+import Composition from './design-pattern/11-composition/Composition.tsx';
 
 type WrapperProps = {
   title: string;
@@ -52,6 +54,12 @@ function App() {
       </Wrapper>
       <Wrapper title='9. Factory Method'>
         <FactoryMethod />
+      </Wrapper>
+      <Wrapper title='10. Mediator'>
+        <Mediator />
+      </Wrapper>
+      <Wrapper title='11. Composition'>
+        <Composition />
       </Wrapper>
     </div>
   );
